@@ -1,3 +1,6 @@
 [submodule "LUFA"]
 	path = LUFA
 	url = https://github.com/abcminiuser/lufa
+[submodule "RF24"]
+	path = RF24
+	url = https://github.com/nRF24/RF24

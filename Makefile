@@ -46,7 +46,7 @@ CC=avr-gcc
 OBJECT_FILES=Joystick.o
 
 clean:
-	rm -f *.o *.hex *.elf *.hex
+	rm -f *.o *.hex *.elf *.hex *.lss *.sym *.map *.eep *.bin
 
 %.hex: %.elf
 	avr-objcopy -j .text -j .data -O ihex $< $@

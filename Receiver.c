@@ -24,7 +24,7 @@ these buttons for our use.
  *  is responsible for the initial application hardware configuration.
  */
 
-#include "Joystick.h"
+#include "Receiver.h"
 
 /*
 The following ButtonMap variable defines all possible buttons within the
@@ -104,9 +104,6 @@ int main(void) {
 		HID_Task();
 		// We also need to run the main USB management task.
 		USB_USBTask();
-		// As part of this loop, we'll also run our bad debounce code.
-		// Optimally, we should replace this with something that fires on a timer.
-		debounce_ports();
 	}
 }
 
